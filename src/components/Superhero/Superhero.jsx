@@ -1,12 +1,22 @@
-export default function Superhero(props) {
+export default function Superhero({
+  nom,
+  description,
+  films = ["Aucun film pour ce superhero"],
+  ...props
+}) {
   return (
-    <div className="superhero">
-      <h2>{props.nom}</h2>
-      <p>{props.description}</p>
-      <b>Films: </b>
-      <ul>
-        <li> Avangers</li>
-      </ul>
-    </div>
+    console.log(props),
+    (
+      <div className="superhero">
+        <h2>{nom}</h2>
+        <p>{description}</p>
+        <b>Films: </b>
+        <ul>
+          {films.map((film) => {
+            <li>{film}</li>;
+          })}
+        </ul>
+      </div>
+    )
   );
 }

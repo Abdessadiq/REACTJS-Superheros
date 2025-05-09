@@ -14,6 +14,7 @@ export default function App() {
         en 2008. Il raconte les origines et les débuts du personnage éponyme
         issu du comics publié par Marvel. Il s'agit de la première production de
         l'univers cinématographique Marvel, et du premier film de la phase une."
+          films={["Iron Man 1", "Iron Man 2", "Iron Man 3"]}
         />
         {/* Superhero Numéro 2 */}
         <Superhero
