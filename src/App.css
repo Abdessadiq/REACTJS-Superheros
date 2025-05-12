@@ -1,13 +1,2 @@
-.superheros {
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  margin: 0 10px;
-}
-.superhero {
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-.superhero h2 {
-  text-align: center;
-}
+
+
